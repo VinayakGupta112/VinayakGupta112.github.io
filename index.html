@@ -38,17 +38,15 @@
   }
 
   /* ── NAV ─────────────────────────────────────────── */
- <nav>
-  <a class="nav-logo" href="#hero">Vinayak Gupta</a>
+nav {position: fixed; top: 0; left: 0; right: 0; z-index: 100;height: var(--nav-h);background: rgba(245,240,232,0.88);backdrop-filter: blur(12px);-webkit-backdrop-filter: blur(12px);border-bottom: 0.5px solid var(--border);display: flex; align-items: center; justify-content: space-between;padding: 0 clamp(1.5rem, 5vw, 4rem);}
 
-  <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#experience">Research</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#interests">Interests</a></li>
-  </ul>
-</nav>
+.nav-logo {font-family: var(--serif);font-size: 1.1rem;font-weight: 500;color: var(--ink);text-decoration: none;letter-spacing: 0.01em;}
+
+.nav-links {display: flex; align-items: center; gap: 0.25rem;list-style: none;}
+
+.nav-links a {font-size: 0.82rem;font-weight: 400;color: var(--ink-muted);text-decoration: none;padding: 0.3rem 0.75rem;border-radius: 999px;transition: color 0.2s, background 0.2s;letter-spacing: 0.02em;}
+
+.nav-links a {color: var(--ink);background: var(--cream-dark);}
   /* ── LAYOUT ──────────────────────────────────────── */
   main { padding-top: var(--nav-h); }
 
